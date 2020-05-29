@@ -9,11 +9,12 @@
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
 
 
-@foreach (Stylist Stylist in Model.Stylists)
-{
-  <p>@Html.ActionLink($"{Stylist.Name}", "Details", "Stylist", new { id = stylist.StylistId})</p>
-}
 
-<p>@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId })</p>
-<p>@Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId})</p>
+@* @foreach (Stylist stylist in Model.Stylists)
+{
+  <p>@Html.ActionLink($"{stylist.Name}", "Details", "Stylist", new { id = stylist.StylistId})</p>
+} *@
+
+@* <p>@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId })</p>
+<p>@Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId})</p> *@
 <p>@Html.ActionLink("Back to list", "Index")</p>
