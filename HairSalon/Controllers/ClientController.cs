@@ -15,7 +15,6 @@ namespace HairSalon.Controllers
       _db = db;
     }
 
-
     [HttpGet, ActionName("Index")]
     public ActionResult Index()
     {
