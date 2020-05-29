@@ -38,11 +38,11 @@ If you have any suggestions or questions please message me on github
 
 ## Technologies Used
 
-C#
-Dotnet
-MySQL
-Entity Framework Core
-MVC
+* C#
+* Dotnet
+* MySQL
+* Entity Framework Core
+* MVC
 
 ### License
 

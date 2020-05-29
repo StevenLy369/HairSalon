@@ -3,9 +3,11 @@ body {
     max-width: 1200px;
     text-align: center;
     object-position: center;
-    background-image: url(https://images.squarespace-cdn.com/content/v1/55930b32e4b0d217906d5f18/1435700975887-06XWUGILM2F1IEEWYJN0/ke17ZwdGBToddI8pDm48kKGb6_ShwAirQAcRsg8gb-cUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKc-aUOR4OqwguG--KKd1_BqDu1kUv1282msFx5gBUZz46_e-nXCGEoQLaOqeTb19GS/Stylist-Hair-Salon.png?format=1500w);
+    background-image: url(https://i.ibb.co/Cbgn72L/background.jpg);
     background-repeat: no-repeat;
     background-color: lavender;
+    background-position: center center;
+    
     
     font-size: 30px;
     color: black;
