@@ -17,13 +17,14 @@ namespace HairSalon.Controllers
 
     public ActionResult Index()
     {
-      List<Stylist> model = _db.Stylists.Include(stylist => stylist.Client).ToList();
-      ViewBag.ClientId = new SelectList(_db.Clients, "ClientId", "Name");
+      // List<Stylist> model = _db.Stylists.Include(stylist => stylist.Client).ToList();
+      // ViewBag.ClientId = new SelectList(_db.Clients, "ClientId", "Name");
+      List<Stylist> model = _db.Stylists.ToList();
       return View(model);
     }
     public ActionResult Create()
     {
-      ViewBag.ClientId = new SelectList(_db.Clients, "ClientId", "Name");
+      // ViewBag.ClientId = new SelectList(_db.Clients, "ClientId", "Name");
       return View();
     }
 
@@ -60,14 +61,14 @@ namespace HairSalon.Controllers
 
     // }
 
-    [HttpPost, ActionName("Delete")]
-    public ActionResult DeleteConfirmed(int id)
-    {
-      var thisStylist = _db.Stylists.FirstOrDefault(stylists => stylists.StylistId == id);
-      _db.Stylists.Remove(thisStylist);
-      _db.SaveChanges();
-      return RedirectToAction("Index");
-    }
+    // [HttpPost, ActionName("Delete")]
+    // public ActionResult DeleteConfirmed(int id)
+    // {
+    //   var thisStylist = _db.Stylists.FirstOrDefault(stylists => stylists.StylistId == id);
+    //   _db.Stylists.Remove(thisStylist);
+    //   _db.SaveChanges();
+    //   return RedirectToAction("Index");
+    // }
 
 
   }
