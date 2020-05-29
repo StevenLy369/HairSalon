@@ -41,11 +41,11 @@ namespace HairSalon.Controllers
       return View(thisClient);
     }
 
-    public ActionResult Edit(int id)
-    {
-      var thisClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
-      return View(thisClient);
-    }
+    // public ActionResult Edit(int id)
+    // {
+    //   var thisClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
+    //   return View(thisClient);
+    // }
 
     // [HttpPost]
     // public ActionResult Edit(Client client)
