@@ -21,13 +21,14 @@ namespace HairSalon.Controllers
       List<Stylist> model = _db.Stylists.ToList();
       return View(model);
     }
+
     [HttpGet, ActionName("Create")]
     public ActionResult Create()
     {
       return View();
     }
 
-    [HttpPost]
+    [HttpGet, ActionName("Create")]
     public ActionResult Create(Stylist stylist)
     {
       _db.Stylists.Add(stylist);
