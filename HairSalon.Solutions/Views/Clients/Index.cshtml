@@ -6,7 +6,10 @@
 @model List<HairSalon.Models.Client>;
 
 <h1>Clients</h1>
-
+@if (Model.Count == 0)
+{
+  <p>You have no clients!</p>
+}
 @foreach(Client client in Model)
 {
   <p>@Html.ActionLink($"{client.Name}", "Details", new { id = client.ClientId })</p>

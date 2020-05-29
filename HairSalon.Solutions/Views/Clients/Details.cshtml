@@ -10,11 +10,4 @@
 
 
 
-@* @foreach (Stylist stylist in Model.Stylists)
-{
-  <p>@Html.ActionLink($"{stylist.Name}", "Details", "Stylist", new { id = stylist.StylistId})</p>
-} *@
-
-@* <p>@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId })</p>
-<p>@Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId})</p> *@
 <p>@Html.ActionLink("Back to list", "Index")</p>
