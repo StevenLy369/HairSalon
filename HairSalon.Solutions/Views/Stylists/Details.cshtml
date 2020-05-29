@@ -6,7 +6,6 @@
 @model HairSalon.Models.Stylist
 
 <h2>Stylist Details</h2> 
-<hr />
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
 <h3>@Html.DisplayNameFor(model => model.Details): @Html.DisplayFor(model => model.Details)<h3>
 
@@ -20,7 +19,7 @@ else
 {
   @foreach (Client client in Model.Clients)
   {
-    <p>@Html.ActionLink($"{client.Name}", "Details", "Clients", new { id = client.ClientId})</p>
+    <h3>@Html.ActionLink($"{client.Name}", "Details", "Clients", new { id = client.ClientId})</h3>
   }
 }
 
