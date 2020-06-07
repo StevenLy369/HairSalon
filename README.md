@@ -14,8 +14,15 @@
 * Open in the text editor of your choice
 * Open MySQL workbench
 * Create a Schema and two tables that match the data inside program file.
-* Connect the database to your project file through appsettings.json
-* dotnet restore/dotnet build inside Solutions folder
+* Connect the database to your project file through appsettings.json using your database name and password using this template
+```
+{
+    "ConnectionStrings": {
+        "DefaultConnection": "Server=localhost;Port=3306;database={DATABASENAME};uid=root;pwd={PASSWORD};"
+    }
+}
+```
+* dotnet restore/dotnet build inside project folder
 * dotnet watch run
 
 
