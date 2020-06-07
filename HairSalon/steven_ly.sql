@@ -18,6 +18,14 @@
 --
 -- Table structure for table `clients`
 --
+USE `steven_ly`;
+CREATE TABLE `clients` (
+  `clientid` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `stylistid` int DEFAULT '0',
+  PRIMARY KEY (`clientid`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 
 DROP TABLE IF EXISTS `clients`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -56,3 +64,6 @@ CREATE TABLE `stylists` (
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2020-05-29 14:52:22
+
+
+
