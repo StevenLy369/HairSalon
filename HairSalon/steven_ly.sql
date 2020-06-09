@@ -17,8 +17,17 @@
 
 --
 -- Table structure for table `clients`
---
+CREATE DATABASE `steven_ly` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `steven_ly`;
+
+CREATE TABLE `stylists` (
+  `stylistid` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `details` varchar(255) DEFAULT NULL,
+  `clientid` int DEFAULT NULL,
+  PRIMARY KEY (`stylistid`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 CREATE TABLE `clients` (
   `clientid` int NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,
